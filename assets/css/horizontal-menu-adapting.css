@@ -1,0 +1,42 @@
+/************************ Horizontal Menu Adapting with button ************************/
+.horizontal-menu-adapting {position: relative;}
+.horizontal-menu-adapting:not(.--jsfied) {overflow-x: auto;-webkit-overflow-scrolling: touch;}
+.horizontal-menu-adapting .--hidden {display: none;}
+.horizontal-menu-adapting a,
+.horizontal-menu-adapting > button {font-size: 1em;line-height: 1.2;text-align: center;color: #faf3dd;background-color: transparent;}
+.horizontal-menu-adapting .-primary {display: flex; flex-wrap: nowrap;}
+.horizontal-menu-adapting .-primary > .-secondary li {background-color: transparent;}
+.horizontal-menu-adapting .-primary > li + li {border-left: 1px solid transparent;}
+.horizontal-menu-adapting .-primary > .-secondary li > a,
+.horizontal-menu-adapting .-primary > .-secondary li > button {white-space: nowrap;}
+.horizontal-menu-adapting .-primary > .-secondary li > a:hover,
+.horizontal-menu-adapting .-primary > .-secondary li > button:hover {background-color: #898989;}
+.horizontal-menu-adapting .-primary > .-secondary li > a:active,
+.horizontal-menu-adapting .-primary > .-secondary li > button:active {background-color: #898989;}
+.horizontal-menu-adapting .-primary .-more {background-color: transparent; position: relative;}
+.horizontal-menu-adapting .-primary .-more > button{height: 38px; width: 60px; border: none; outline: none; padding: 5px 12px; border-radius: 5px; background-color: #898989; font-size: 14px; font-weight: 600; display: flex; align-items: center;}
+.horizontal-menu-adapting .-primary .-more > button span {display: inline-block;transition: transform 0.2s;}
+
+.horizontal-menu-adapting .-secondary {background-color: #fff; border-radius: 5px; z-index: 99; box-shadow: none; margin-top: 5px; border:2px solid rgb(226 226 226); max-width: 100%; min-width: 18em; display: none; position: absolute; top: 100%; right: 0; -webkit-animation: nav-secondary 0.2s; animation: nav-secondary 0.2s;}
+.horizontal-menu-adapting .-secondary li{border-top: 1px solid transparent;background-color: transparent;}
+.horizontal-menu-adapting .-secondary .nav-item .nav-link {padding: 0.6em 0.9em; background-color: transparent !important; width: 100%; text-align: left; border-bottom: 1px solid #ddd; border-radius: 0px;}
+.horizontal-menu-adapting .-secondary a:hover,
+.horizontal-menu-adapting .-secondary button:hover {background-color: transparent;}
+.horizontal-menu-adapting .-secondary a:active,
+.horizontal-menu-adapting .-secondary button:active {background-color: transparent;}
+.horizontal-menu-adapting.--show-secondary > ul .-secondary {display: block;}
+
+.horizontal-menu.--jsfied .-primary button[type="button"]{width: 70px; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -ms-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease;}
+.layout-fullwidth .horizontal-menu.--jsfied .-secondary button[type="button"]{width: 100%; transition: all 0.3s ease; text-align: left; background-color: #fff; border-radius: 0; border-bottom: 1px solid #ddd !important; border: none; margin-bottom: 0;}
+
+@-webkit-keyframes nav-secondary {
+  0% {opacity: 0;transform: translateY(-1em);}
+  100% {opacity: 1;transform: translateY(0);}
+}
+
+@keyframes nav-secondary {
+  0% {opacity: 0;transform: translateY(-1em);}
+  100% { opacity: 1; transform: translateY(0);}
+}
+
+/************************ Horizontal Menu Adapting with button ************************/

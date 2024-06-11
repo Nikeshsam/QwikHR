@@ -1,0 +1,309 @@
+header.stickyHeader .navWrapper {position: fixed; top: 0; left: 0; right: 0; z-index: 999999; background: #265BCB; -webkit-box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%); -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2); box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%);}
+header.stickyHeader .navbar {padding: 0.7rem calc(var(--bs-gutter-x) * .5);}
+header.stickyHeader .navbar .navbar-nav .nav-item .nav-link.active{color:#FF8C00;}
+header.stickyHeader .navbar .navbar-nav .nav-item .nav-link{color: #fff; font-weight: 400;}
+header.stickyHeader .navbar .navbar-nav .nav-item.dropdown .nav-link.dropdown-toggle::after{background-image: url(../images/sprites.png); background-position: 172px 0px;}
+header.stickyHeader .off-scroll{display: none !important;}
+header.stickyHeader .on-scroll{display: block !important;}
+
+.for-lg {display: flex !important;}
+.img-filter{filter: grayscale(100%);}
+
+.primary{color: #2A2A2A !important;}
+.secondary{color: #0E47C0 !important;}
+.secondary:hover,
+.secondary:focus{color: #386BD8 !important;}
+.secondary:active{color: #1D48A2 !important;}
+
+.color-1{color: #505050 !important;}
+.color-2{color: #101828 !important;}
+
+.link{color: #2D66F5; text-decoration: underline;}
+
+.border-top{border-top: 1px solid #BBD1FF !important;}
+.border-bottom{border-bottom: 1px solid #BBD1FF !important;}
+.border-left{border-left: 1px solid #BBD1FF !important;}
+.border-right{border-right: 1px solid #BBD1FF !important;}
+
+.border-check-all{border: 2px solid #858585 !important;}
+
+.text-ellipsis{white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: inline-block !important;}
+
+.primary-heading{background-color: #F5F5F5; border: 1px solid #E9EAEC; border-radius: 5px; padding: 13px 12px; display: flex; gap: 15px; align-items: center;}
+
+h2{font-size: 22px; font-weight: 600; color: #5B5B5B; margin: 0; line-height: 22px;}
+h3{font-size: 16px; font-weight: 600; color: #5B5B5B; margin: 0; line-height: 16px;}
+
+.btn{border: 1px solid transparent; padding: 0 1.5rem !important; font-size: 16px; font-weight: 600;  height: 40px; border: none; color: #0E47C0; text-transform: capitalize; border-radius: 5px; box-shadow: none; transition: all 0.25s ease-in-out 0s;}
+.btn:hover,
+.btn:focus,
+.btn:active{outline: none; box-shadow: none;}
+
+.btn-primary{background-color: #898989 !important; color: #fff !important; border: none !important;}
+.btn-primary:hover{background-color: #989898 !important; box-shadow: none !important; color: #fff !important;}
+.btn-primary:focus,
+.btn-primary:active{background-color: #606060 !important; box-shadow: none !important; color: #fff !important;}
+
+.btn-secondary {border: 1px solid #898989 !important; background-color: transparent !important; color: #2A2A2A !important;}
+.btn-secondary:hover{background-color: #F6F6F7 !important; box-shadow: none; border: 1px solid #898989 !important; color: #2A2A2A !important;}
+.btn-secondary:focus,
+.btn-secondary:active {background-color: #ECECEC !important; box-shadow: none; border: 1px solid #898989 !important; color: #2A2A2A !important;}
+
+.btn-login{background-color: #ECECEC !important; color: #2A2A2A !important; height: 50px !important; border-radius: 5px; border: none !important;}
+.btn-login:hover{background-color: #dedede !important; border-radius: 0; box-shadow: 2px 4px 3px rgb(0 0 0 / 14%);color: #2A2A2A !important;}
+.btn-login:focus,
+.btn-login:active{background-color: #cdcdcd !important; border-radius: 0; box-shadow: 2px 4px 3px rgb(0 0 0 / 14%);color: #2A2A2A !important;}
+
+.btn-back{text-decoration: none; color: #858585; font-size: 16px; font-weight: 400; margin-bottom: 15px;}
+.btn-back span{line-height: 10px;}
+
+.btn-disabled {opacity: 0.6; cursor: not-allowed !important;}
+
+.btn-block{width: 100%;}
+
+.btn-border-radius-10{border-radius: 10px !important;}
+.btn-border-radius-20{border-radius: 20px !important;}
+.btn-border-radius-30{border-radius: 30px !important;}
+.btn-border-radius-40{border-radius: 40px !important;}
+.btn-border-radius-50{border-radius: 50px !important;}
+.btn-border-radius-60{border-radius: 60px !important;}
+.btn-border-radius-70{border-radius: 70px !important;}
+.btn-border-radius-80{border-radius: 80px !important;}
+.btn-border-radius-90{border-radius: 90px !important;}
+.btn-border-radius-100{border-radius: 100px !important;}
+
+.font-size-12 {font-size: 12px !important;}
+.font-size-14 {font-size: 14px !important;}
+.font-size-16 {font-size: 16px !important;}
+.font-size-18 {font-size: 18px !important;}
+.font-size-20 {font-size: 20px !important;}
+.font-size-22 {font-size: 22px !important;}
+.font-size-24 {font-size: 24px !important;}
+
+.font-weight-100 {font-weight: 100 !important;}
+.font-weight-200 {font-weight: 200 !important;}
+.font-weight-300 {font-weight: 300 !important;}
+.font-weight-400 {font-weight: 400 !important;}
+.font-weight-500 {font-weight: 500 !important;}
+.font-weight-600 {font-weight: 600 !important;}
+.font-weight-700 {font-weight: 700 !important;}
+.font-weight-800 {font-weight: 800 !important;}
+
+
+.h-30{height: 30px !important;}
+.h-34{height: 34px !important;}
+.h-38{height: 38px !important;}
+.h-40{height: 40px !important;}
+
+.table-width-3{width: 3% !important;}
+.table-width-4{width: 4% !important;}
+.table-width-5{width: 5% !important;}
+.table-width-6{width: 6% !important;}
+.table-width-7{width: 7% !important;}
+.table-width-8{width: 8% !important;}
+.table-width-10{width: 10% !important;}
+.table-width-12{width: 12% !important;}
+.table-width-15{width: 15% !important;}
+.table-width-17{width: 17% !important;}
+.table-width-18{width: 18% !important;}
+.table-width-20{width: 20% !important;}
+.table-width-22{width: 22% !important;}
+.table-width-25{width: 25% !important;}
+.table-width-30{width: 30% !important;}
+.table-width-35{width: 35% !important;}
+.table-width-40{width: 40% !important;}
+.table-width-45{width: 45% !important;}
+.table-width-50{width: 50% !important;}
+.table-width-55{width: 55% !important;}
+.table-width-60{width: 60% !important;}
+.table-width-65{width: 65% !important;}
+.table-width-70{width: 70% !important;}
+.table-width-75{width: 75% !important;}
+.table-width-80{width: 80% !important;}
+.table-width-85{width: 85% !important;}
+.table-width-90{width: 90% !important;}
+.table-width-95{width: 95% !important;}
+.table-width-100{width: 100% !important;}
+
+.no-border{border: none !important;}
+.no-bg{background-color: transparent !important;}
+.no-bg-img{background: transparent !important;}
+.no-box-shadow{box-shadow: none !important;}
+
+.opacity-100 {opacity: 1!important;}
+.opacity-75 {opacity: 1!important;}
+.opacity-50 {opacity: 1!important;}
+.opacity-25 {opacity: 1!important;}
+
+.form-check{padding: 0; margin: 0; min-height: initial; display: flex; align-items: center; gap: 7px;}
+.form-check .form-check-label{color: #858585; font-size: 16px; font-weight: 400; line-height: 12px; display: inline-block;}
+.form-check .form-check-input{min-width: 20px; min-height: 20px; margin: 0; background-color: #fff; border: 1px solid #E1E1E1; border-radius: 4px; box-shadow: none;}  
+.form-check .form-check-input:focus{box-shadow: none !important;}
+.form-check .form-check-input:checked{background-color: #265BCB; border: 2px solid #265BCB;} 
+.form-check .form-check-input[type=radio]{border-radius: 50% !important;}
+
+.modal-radio-check .form-check .form-check-input{min-width: 16px; min-height: 16px; border: 1px solid #E1E1E1; border-radius: 2px;}
+
+.form-check.form-switch{display: flex; align-items: center;}
+.form-check.form-switch input{width: 46px; height: 22px !important; margin-left: 0; background-position: left 2px center; border-radius: 2em; transition: background-position .15s ease-in-out;}
+.form-check.form-switch .form-check-input{background-image: url(../images/toogle-normal.svg); background-size: 15px;}
+.form-check.form-switch .form-check-input:checked{background-color: #898989; border: 2px solid #898989; background-image: url(../images/toogle-active.svg); background-position: right 2px center;}
+
+.form-label{color: #858585; font-size: 14px; font-weight: 400; line-height: 16px; margin-bottom: 5px;}
+.form-label span{color:#EF5454;}
+
+.form-control{border-radius: 5px; border: 1px solid #D0D0D0; background-color: #fff; height: 40px; box-shadow: none; color: #373636; font-size: 16px; font-weight: 500;}
+.form-control:focus {border: 1px solid #858585; box-shadow: none;} 
+
+.error-message{position: relative;}
+.error-message .form-control{border: 1px solid #F03D3E;}
+.error-message span{position: absolute; bottom: -8px; padding: 0 7px; background-color: #fff; font-size: 13px; font-weight: 500; color: #F03D3E; left: 5px;}
+
+.form-select{border-radius: 5px; border: 1px solid #D0D0D0; background-color: #fff; height: 40px; box-shadow: none; color: #373636; font-size: 16px; font-weight: 500; position: relative; background-image: url(../images/select-arrow.svg); background-repeat: no-repeat; appearance: none; background-size: 12px;}
+.form-select optgroup{font-size: 14px;}
+.form-select:focus {border: 1px solid #858585; box-shadow: none;} 
+.form-control:disabled, .form-control[readonly],
+.form-select:disabled{background-color: #ECECEC !important;}
+
+.form-select ~ .ui-selectmenu-button {border-radius: 5px; border: 1px solid #D0D0D0; width: 100%; background-color: #fff; height: 40px; box-shadow: none; color: #373636; font-size: 16px; font-weight: 500; position: relative; background-image: url(../images/select-arrow.svg); background-repeat: no-repeat; appearance: none; background-size: 12px; background-position: right 10px center; font-family: "Inter", sans-serif; display: flex; align-items: center;padding: .375rem .75rem;}
+.form-select ~ .ui-selectmenu-button .ui-selectmenu-icon{display: none; }
+
+.ui-selectmenu-menu .ui-menu{border-radius: 0 0 7px 7px;} 
+.ui-selectmenu-menu .ui-menu .ui-menu-item{border-bottom: 1px solid #D0D0D0 !important;}
+.ui-selectmenu-menu .ui-menu .ui-menu-item:first-child{display: none;}
+.ui-selectmenu-menu .ui-menu .ui-menu-item:last-child{border-bottom: none !important;}
+.ui-selectmenu-menu .ui-menu .ui-menu-item .ui-menu-item-wrapper{padding: 10px 1em; font-family: "Inter", sans-serif !important; color: #373636; font-size: 14px; font-weight: 500;}
+.ui-selectmenu-menu .ui-menu .ui-menu-item .ui-menu-item-wrapper.ui-state-active{color: #fff; border: none !important;}
+
+.custom-input-group .input-group .dropdown-toggle{border: 1px solid #D0D0D0; padding: 0 25px 0 12px !important; font-size: 16px; font-weight: 500; color: #5B5B5B;}
+.custom-input-group .input-group .dropdown-toggle::after{border: none !important; background-image: url(../images/select-arrow.svg); background-repeat: no-repeat; background-size: 12px; content: ''; width: 12px; height: 7px; margin-left: 0 !important; position: absolute; top: 50%; transform: translateY(-50%); right: 7px;}
+.custom-input-group .input-group .dropdown-toggle:disabled{background-color: #ECECEC; opacity: 1;}
+
+.input-group .input-group-text{background-color: #CDDDFF; font-size: 15px; font-weight: 600; color: #373636;}
+
+.input-group .form-control[type="file"]{text-indent: -101px; line-height: 29px; border-right: none !important; border: 1px solid #D0D0D0;}
+.input-group .form-control[type="file"] ~ .input-group-text{background-color: #F5F5F5; font-size: 15px; width: 32px; height: 32px; font-weight: 600; color: #373636; justify-content: center; border: 1px solid #D0D0D0;}
+
+
+
+.upload-mobile .input-group .form-control[type="file"]{text-indent: -112px; line-height: 29px; border-right: none !important; border: 1px solid #D0D0D0;}
+.upload-mobile .input-group .form-control[type="file"] ~ .input-group-text{background-color: #F5F5F5; font-size: 15px; width: 40px; height: 40px; font-weight: 600; color: #373636; justify-content: center; border: 1px solid #D0D0D0;}
+
+.form-control.disabled{background-color: #EBEBEB; cursor: not-allowed; border: 1px solid #CED4DA; pointer-events: none;}
+.form-select.disabled{background-color: #EBEBEB; cursor: not-allowed; border: 1px solid #CED4DA; pointer-events: none;}
+
+
+.form-control.calender ~ .input-group-addon{background-image: url(../images/calendar.svg); background-repeat: no-repeat; background-position: right 10px center;height: 40px; width: 40px; border: 1px solid #D0D0D0; border-radius: 5px;}
+.form-control.calender ~ .input-group-addon[readonly]{background-color: #ECECEC !important;}
+.form-control.calender:focus ~ .input-group-addon {border: 1px solid #858585; box-shadow: none;}
+.form-control.billing-goal{background-image: url(../images/billing-goal.svg); background-repeat: no-repeat; background-position: right 10px center;}
+
+textarea.form-control{height: auto;}
+
+.alert{padding: 12px 15px; display: flex; justify-content: flex-start; align-items: center; grid-gap: 15px; box-shadow: none; border-radius: 6px; border: none;}
+.alert i{width: 24px; height: 24px; display: flex; align-items: center;}
+.alert span{border: none;  font-size: 16px; font-weight: 500; color: #fff; line-height: 16px;}
+.alert-success{background-color: rgb(0 123 64 / 9%);}
+.alert-success span{ color: #007B40;}
+.alert-danger{background-color: rgb(240 61 62 / 10%);}
+.alert-danger span{ color: #F03D3E;}
+.alert-warning{background-color: rgb(216 73 16 / 10%);}
+.alert-warning span{ color: #D84910;}
+
+.datepicker{padding: 0;}
+.datepicker-dropdown{padding: 15px; box-shadow: rgb(119 119 119 / 35%) 0px 2px 8px; border: none; border-radius: 8px; z-index: 9999 !important;}
+
+.datepicker-dropdown .datepicker-days .table-condensed thead tr,
+.datepicker-dropdown .datepicker-months .table-condensed thead tr,
+.datepicker-dropdown .datepicker-years .table-condensed thead tr,
+.datepicker-dropdown .datepicker-decades .table-condensed thead tr,
+.datepicker-dropdown .datepicker-centuries .table-condensed thead tr,
+.datepicker-dropdown .datepicker-days .table-condensed tbody tr,
+.datepicker-dropdown .datepicker-months .table-condensed tbody tr,
+.datepicker-dropdown .datepicker-years .table-condensed tbody tr,
+.datepicker-dropdown .datepicker-decades .table-condensed tbody tr,
+.datepicker-dropdown .datepicker-centuries .table-condensed tbody tr{display: flex; align-items: center; justify-content: flex-end;}
+
+.datepicker-dropdown .datepicker-days .table-condensed thead tr th.datepicker-switch,
+.datepicker-dropdown .datepicker-months .table-condensed thead tr th.datepicker-switch,
+.datepicker-dropdown .datepicker-years .table-condensed thead tr th.datepicker-switch,
+.datepicker-dropdown .datepicker-decades .table-condensed thead tr th.datepicker-switch,
+.datepicker-dropdown .datepicker-centuries .table-condensed thead tr th.datepicker-switch{font-size: 16px; font-weight: 600; color: #141823; line-height: 14px; align-items: center; display: flex; justify-content: flex-start; width: calc(100% - 70px); order: 0;}
+
+.datepicker-dropdown .datepicker-days .table-condensed thead tr th.datepicker-switch:hover,
+.datepicker-dropdown .datepicker-months .table-condensed thead tr th.datepicker-switch:hover,
+.datepicker-dropdown .datepicker-years .table-condensed thead tr th.datepicker-switch:hover,
+.datepicker-dropdown .datepicker-decades .table-condensed thead tr th.datepicker-switch:hover,
+.datepicker-dropdown .datepicker-centuries .table-condensed thead tr th.datepicker-switch:hover{background-color: transparent;}
+
+.datepicker-dropdown .datepicker-days .table-condensed thead tr th.prev,
+.datepicker-dropdown .datepicker-months .table-condensed thead tr th.prev,
+.datepicker-dropdown .datepicker-years .table-condensed thead tr th.prev,
+.datepicker-dropdown .datepicker-decades .table-condensed thead tr th.prev,
+.datepicker-dropdown .datepicker-centuries .table-condensed thead tr th.prev,
+.datepicker-dropdown .datepicker-days .table-condensed thead tr th.next,
+.datepicker-dropdown .datepicker-months .table-condensed thead tr th.next,
+.datepicker-dropdown .datepicker-years .table-condensed thead tr th.next,
+.datepicker-dropdown .datepicker-decades .table-condensed thead tr th.next,
+.datepicker-dropdown .datepicker-centuries .table-condensed thead tr th.next{font-size: 0; width: 35px; height: 35px;}
+
+.datepicker-dropdown .datepicker-days .table-condensed thead tr th.prev,
+.datepicker-dropdown .datepicker-months .table-condensed thead tr th.prev,
+.datepicker-dropdown .datepicker-years .table-condensed thead tr th.prev,
+.datepicker-dropdown .datepicker-decades .table-condensed thead tr th.prev,
+.datepicker-dropdown .datepicker-centuries .table-condensed thead tr th.prev{background-image: url(../images/arrow-left.svg); background-repeat: no-repeat; background-position: center; order: 1;}
+.datepicker-dropdown .datepicker-days .table-condensed thead tr th.next,
+.datepicker-dropdown .datepicker-months .table-condensed thead tr th.next,
+.datepicker-dropdown .datepicker-years .table-condensed thead tr th.next,
+.datepicker-dropdown .datepicker-decades .table-condensed thead tr th.next,
+.datepicker-dropdown .datepicker-centuries .table-condensed thead tr th.next{background-image: url(../images/arrow-right.svg); background-repeat: no-repeat; background-position: center; order: 2;}
+
+.datepicker-dropdown .datepicker-days .table-condensed thead tr th.next,
+.datepicker-dropdown .datepicker-months .table-condensed thead tr th.next,
+.datepicker-dropdown .datepicker-years .table-condensed thead tr th.next,
+.datepicker-dropdown .datepicker-decades .table-condensed thead tr th.next,
+.datepicker-dropdown .datepicker-centuries .table-condensed thead tr th.next{font-size: 0;}
+
+.datepicker-dropdown .datepicker-days .table-condensed thead tr:nth-child(3) th,
+.datepicker-dropdown .datepicker-months .table-condensed thead tr:nth-child(3) th,
+.datepicker-dropdown .datepicker-years .table-condensed thead tr:nth-child(3) th,
+.datepicker-dropdown .datepicker-decades .table-condensed thead tr:nth-child(3) th,
+.datepicker-dropdown .datepicker-centuries .table-condensed thead tr:nth-child(3) th{font-size: 14px; font-weight: 500; color: #101018;}
+
+.datepicker-dropdown .datepicker-days .table-condensed thead tr:nth-child(3) th:first-child,
+.datepicker-dropdown .datepicker-days .table-condensed thead tr:nth-child(3) th:last-child{color: #f53434  !important;}
+
+.datepicker-dropdown .datepicker-days .table-condensed tbody tr td.day{font-size: 13px; font-weight: 500; color: #5f5f5f;}
+.datepicker-dropdown .datepicker-days .table-condensed tbody tr td.new.day,
+.datepicker-dropdown .datepicker-days .table-condensed tbody tr td.old.day{opacity: .5;}
+.datepicker-dropdown .datepicker-days .table-condensed tbody tr td.day:first-child,
+.datepicker-dropdown .datepicker-days .table-condensed tbody tr td.day:last-child{color: #f53434  !important;}
+.datepicker-dropdown .datepicker-days .table-condensed tbody tr td.day:hover{background-color: #f1f7ff;}
+.datepicker-dropdown .datepicker-days .table-condensed tbody tr td.day.active{background-color: #B7B7B7; background-image: none; color: #101018;}
+.datepicker-dropdown .datepicker-days .table-condensed tbody tr td.old.day{color: rgb(194, 194, 194);}
+
+.datepicker-dropdown .datepicker-days .table-condensed thead tr:nth-child(2){padding-bottom: 15px; padding-left: 10px;}
+.datepicker-dropdown .datepicker-days .table-condensed thead tr:nth-child(3) th,
+.datepicker-dropdown .datepicker-days .table-condensed tbody tr td{width: 38px; display: flex; border-radius: 6px; justify-content: center; align-items: center; padding: 10px 8px; height: auto; }
+
+.datepicker-dropdown .datepicker-months .table-condensed tbody tr td{display: flex; flex-wrap: wrap; justify-content: flex-start; width: 235px; height: auto; flex-direction: revert; grid-gap: 9px; padding-top: 10px;}
+.datepicker-dropdown .datepicker-months .table-condensed tbody tr td span.month{font-size: 14px; font-weight: 500; color: #000; width: 35px; height: 35px; line-height: 35px; display: flex; justify-content: center; align-items: center; margin: 0;}
+.datepicker-dropdown .datepicker-months .table-condensed tbody tr td span.month:hover{background-color: #f1f7ff;}
+.datepicker-dropdown .datepicker-months .table-condensed tbody tr td span.month.active{background-image: none; background-color:#0d47c0; color: #fff;}
+
+.datepicker-dropdown .datepicker-years .table-condensed tbody tr td{display: flex; flex-wrap: wrap; justify-content: flex-start; width: 235px; height: auto; flex-direction: revert; grid-gap: 9px; padding-top: 10px;}
+.datepicker-dropdown .datepicker-years .table-condensed tbody tr td span.year{font-size: 13px; font-weight: 500; color: #000; width: 39px; height: 35px; line-height: 35px; display: flex; justify-content: center; align-items: center; margin: 0;}
+.datepicker-dropdown .datepicker-years .table-condensed tbody tr td span.year:hover{background-color: #f1f7ff;}
+.datepicker-dropdown .datepicker-years .table-condensed tbody tr td span.year.active{background-image: none; background-color:#0d47c0; color: #fff;}
+
+.datepicker-dropdown .datepicker-decades .table-condensed tbody tr td{display: flex; flex-wrap: wrap; justify-content: flex-start; width: 235px; height: auto; flex-direction: revert; grid-gap: 9px; padding-top: 10px;}
+.datepicker-dropdown .datepicker-decades .table-condensed tbody tr td span.decade {font-size: 13px; font-weight: 500; color: #000; width: 39px; height: 35px; line-height: 35px; display: flex; justify-content: center; align-items: center; margin: 0;}
+.datepicker-dropdown .datepicker-decades .table-condensed tbody tr td span.decade:hover{background-color: #f1f7ff;}
+.datepicker-dropdown .datepicker-decades .table-condensed tbody tr td span.decade.active{background-image: none; background-color:#0d47c0; color: #fff;}
+
+.datepicker-dropdown .datepicker-centuries .table-condensed tbody tr td{display: flex; flex-wrap: wrap; justify-content: flex-start; width: 235px; height: auto; flex-direction: revert; grid-gap: 9px; padding-top: 10px;}
+.datepicker-dropdown .datepicker-centuries .table-condensed tbody tr td span.century {font-size: 13px; font-weight: 500; color: #000; width: 39px; height: 35px; line-height: 35px; display: flex; justify-content: center; align-items: center; margin: 0;}
+.datepicker-dropdown .datepicker-centuries .table-condensed tbody tr td span.century:hover{background-color: #f1f7ff;}
+.datepicker-dropdown .datepicker-centuries .table-condensed tbody tr td span.century.active{background-image: none; background-color:#0d47c0; color: #fff;}
+
+
