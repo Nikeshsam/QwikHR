@@ -1,5 +1,5 @@
 <?php
-    include "header.php";
+    include "Header/header.php";
 ?>
 
     <div class="main-content">
@@ -4022,5 +4022,5 @@
     <div id="drop-effect" class="modal-drop-effect"></div>
 
 <?php
-    include "footer.php";
+    include "Footer/footer.php";
 ?>
