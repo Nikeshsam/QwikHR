@@ -1,230 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-table@1.22.4/dist/bootstrap-table.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-table@1.22.4/dist/extensions/fixed-columns/bootstrap-table-fixed-columns.min.css"
-        rel="stylesheet">
-
-    <!-- SIMPLE-SCROLL-BAR -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/simplebar.css">
-    <!-- SIMPLE-SCROLL-BAR -->
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap5-toggle@5.0.4/css/bootstrap5-toggle.min.css">
-
-    <link rel="stylesheet" type="text/css" href="../assets/css/slick.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/slick-theme.css">
-
-    <link rel="stylesheet" type="text/css" href="../assets/css/horizontal-menu-adapting.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/vertical-menu-adapting.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/components.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-</head>
-
-<body>
-
-    <header>
-        <nav>
-            <div class="top-header">
-                <h2>Expense Management</h2>
-                <ul class="profile">
-                    <li>
-                        <a href="javascript:void(0)">
-                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.13049 5.41642L9.71621 7.99496C10.6928 7.35108 11.8446 7 13.0334 7C14.2221 7 15.374 7.35108 16.3506 7.99496L18.9363 5.41642C17.2568 4.11634 15.1821 3.4 13.0334 3.4C10.8847 3.4 8.80999 4.11634 7.13049 5.41642ZM20.6381 7.11348L18.0524 9.69202C18.698 10.6659 19.0501 11.8145 19.0501 13C19.0501 14.1855 18.698 15.3341 18.0524 16.308L20.638 18.8865C21.1638 18.211 21.5978 17.4671 21.9273 16.6738C22.4111 15.509 22.6601 14.2607 22.6601 13C22.6601 10.8572 21.9418 8.78832 20.6381 7.11348ZM18.9363 20.5835L16.3506 18.005C15.374 18.6489 14.2221 19 13.0334 19C11.8446 19 10.6928 18.6489 9.71621 18.005L7.13052 20.5835C7.80787 21.1078 8.55388 21.5406 9.34941 21.8692C10.5174 22.3517 11.7692 22.6 13.0334 22.6C14.2976 22.6 15.5494 22.3517 16.7174 21.8692C17.5129 21.5406 18.2589 21.1078 18.9363 20.5835ZM5.42874 18.8865L8.01443 16.308C7.36875 15.3341 7.0167 14.1855 7.0167 13C7.0167 11.8145 7.36875 10.6659 8.01443 9.69202L5.42871 7.11348C4.12501 8.78832 3.40668 10.8572 3.40668 13C3.40668 14.2607 3.65568 15.509 4.13947 16.6738C4.46899 17.4671 4.903 18.211 5.42874 18.8865ZM4.52445 4.51467C6.78117 2.26422 9.84196 1 13.0334 1C16.2248 1 19.2856 2.26422 21.5423 4.51467C23.799 6.76512 25.0668 9.81742 25.0668 13C25.0668 14.5759 24.7555 16.1363 24.1508 17.5922C23.5461 19.0481 22.6598 20.371 21.5423 21.4853C20.4249 22.5997 19.0983 23.4835 17.6384 24.0866C16.1784 24.6896 14.6136 25 13.0334 25C11.4531 25 9.88837 24.6896 8.42841 24.0866C6.96849 23.4835 5.64188 22.5997 4.52445 21.4853C3.40702 20.371 2.52071 19.0481 1.91599 17.5922C1.31125 16.1363 1 14.5759 1 13C1 9.81742 2.26774 6.76512 4.52445 4.51467ZM13.0334 9.4C12.0764 9.4 11.1586 9.77947 10.4812 10.4549C9.8039 11.1304 9.42338 12.0457 9.42338 13C9.42338 13.9543 9.8039 14.8696 10.4812 15.5451C11.1586 16.2205 12.0764 16.6 13.0334 16.6C13.9904 16.6 14.9082 16.2205 15.5855 15.5451C16.2629 14.8696 16.6434 13.9543 16.6434 13C16.6434 12.0457 16.2629 11.1304 15.5855 10.4549C14.9082 9.77947 13.9904 9.4 13.0334 9.4Z" fill="black" stroke="white" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>                            
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)" class="modal-sidebar" data-target-custom="notification" >
-                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14.1893 21H10.1782M18.2005 8C18.2005 6.4087 17.5666 4.88258 16.4382 3.75736C15.3099 2.63214 13.7795 2 12.1838 2C10.588 2 9.05766 2.63214 7.92931 3.75736C6.80097 4.88258 6.16706 6.4087 6.16706 8C6.16706 11.0902 5.38537 13.206 4.51214 14.6054C3.77556 15.7859 3.40726 16.3761 3.42077 16.5408C3.43572 16.7231 3.47445 16.7926 3.62178 16.9016C3.75483 17 4.35463 17 5.55422 17H18.8133C20.0129 17 20.6127 17 20.7457 16.9016C20.8931 16.7926 20.9318 16.7231 20.9468 16.5408C20.9603 16.3761 20.592 15.7859 19.8554 14.6054C18.9822 13.206 18.2005 11.0902 18.2005 8Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M17.6991 7.5C19.3585 7.5 20.7061 6.15816 20.7061 4.5C20.7061 2.84184 19.3585 1.5 17.6991 1.5C16.0397 1.5 14.6921 2.84184 14.6921 4.5C14.6921 6.15816 16.0397 7.5 17.6991 7.5Z" fill="#5750E4" stroke="white"/>
-                            </svg>    
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">
-                            <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <mask id="mask0_2813_715" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="23" height="24">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.300781 0H22.6995V24H0.300781V0Z" fill="white"/>
-                                </mask>
-                                <g mask="url(#mask0_2813_715)">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.34295 17.8833C6.60892 17.8833 6.8749 17.9169 7.13507 17.9864C7.92022 18.1972 8.602 18.7207 9.00619 19.4238C9.26869 19.8651 9.41387 20.3805 9.41852 20.9063C9.41852 21.6592 10.0248 22.2626 10.7705 22.2626H12.2258C12.968 22.2626 13.5742 21.6627 13.5777 20.9225C13.5731 20.1048 13.8937 19.3276 14.4802 18.7427C15.0586 18.1659 15.867 17.8196 16.6754 17.8428C17.205 17.8555 17.7149 17.998 18.1644 18.2528C18.8113 18.6223 19.6371 18.4022 20.0111 17.7652L20.7823 16.483C20.9542 16.1876 21.0042 15.817 20.9124 15.4753C20.8218 15.1336 20.5942 14.8371 20.2875 14.6622C19.5697 14.2499 19.0575 13.5851 18.845 12.7882C18.6348 12.0064 18.7498 11.1527 19.1598 10.4497C19.4269 9.98639 19.8183 9.59606 20.2875 9.32735C20.9171 8.96018 21.1377 8.13899 20.7719 7.49964C20.7568 7.47415 20.7428 7.44751 20.7312 7.41972L20.0506 6.24294C19.6801 5.60011 18.8554 5.37889 18.2085 5.74605C17.5093 6.15839 16.6777 6.27653 15.8786 6.06689C15.0807 5.86072 14.4117 5.35688 13.9947 4.64572C13.7276 4.20095 13.5824 3.68322 13.5777 3.15622C13.5882 2.7601 13.4488 2.40452 13.1956 2.14391C12.9436 1.88446 12.5893 1.73737 12.2258 1.73737H10.7705C10.4104 1.73737 10.0736 1.87751 9.81922 2.13001C9.56602 2.38367 9.42781 2.72072 9.43013 3.07977C9.40574 4.77313 8.01778 6.13638 6.33714 6.13638C5.79822 6.13059 5.27904 5.98581 4.82839 5.7171C4.19539 5.35804 3.36843 5.57927 2.99792 6.22209L2.2116 7.51122C1.85155 8.13435 2.07223 8.95787 2.71336 9.32966C3.6646 9.87867 4.25811 10.9026 4.25811 12.0006C4.25811 13.0986 3.6646 14.1213 2.71103 14.6715C2.07339 15.0398 1.85271 15.8587 2.22206 16.4957L2.95494 17.7559C3.13613 18.0814 3.43231 18.3165 3.77494 18.4126C4.11641 18.5076 4.49273 18.4671 4.80632 18.2933C5.26743 18.0235 5.80403 17.8833 6.34295 17.8833ZM12.2258 24H10.7705C9.06431 24 7.67636 22.6171 7.67636 20.9156C7.67403 20.7059 7.61364 20.4882 7.50097 20.2994C7.31862 19.982 7.02361 19.755 6.6833 19.6647C6.34531 19.5743 5.9748 19.6241 5.6705 19.8002C4.9411 20.2056 4.08277 20.304 3.29762 20.084C2.51363 19.8627 1.83649 19.3253 1.43927 18.613L0.713352 17.3656C-0.135682 15.8969 0.369557 14.0148 1.83998 13.1669C2.25694 12.9272 2.51595 12.4801 2.51595 12.0006C2.51595 11.5211 2.25694 11.0728 1.83998 10.8331C0.368396 9.9806 -0.135682 8.09382 0.71219 6.62516L1.49967 5.33604C2.33709 3.8836 4.23028 3.37165 5.7065 4.21717C5.90744 4.33647 6.1258 4.3967 6.34764 4.39902C7.07123 4.39902 7.67636 3.80368 7.68797 3.07167C7.68332 2.26437 8.00273 1.4895 8.58462 0.90459C9.16884 0.320834 9.9447 0 10.7705 0H12.2258C13.0574 0 13.8658 0.340524 14.4454 0.932387C15.0238 1.52773 15.3432 2.34429 15.3188 3.17243C15.3211 3.35891 15.3827 3.57434 15.4942 3.76314C15.6789 4.07586 15.9704 4.29593 16.3165 4.38627C16.6626 4.47198 17.025 4.42565 17.3328 4.24381C18.8195 3.39713 20.7115 3.90444 21.5605 5.37542L22.2841 6.62516C22.3027 6.65875 22.319 6.69118 22.3329 6.72477C23.1018 8.17374 22.5884 9.99797 21.1598 10.8308C20.9519 10.9501 20.7835 11.1168 20.6674 11.3184C20.4874 11.6299 20.4374 12.0006 20.528 12.3411C20.6209 12.6886 20.8428 12.977 21.1552 13.1553C21.8602 13.5596 22.3864 14.2406 22.5966 15.0271C22.8068 15.8124 22.6918 16.6648 22.2818 17.3679L21.5106 18.6489C20.6616 20.1037 18.7695 20.6075 17.298 19.7597C17.1017 19.6473 16.8752 19.5859 16.6499 19.5801H16.6429C16.3072 19.5801 15.9623 19.7226 15.7114 19.9716C15.457 20.2253 15.3177 20.5635 15.32 20.9225C15.3118 22.624 13.9239 24 12.2258 24Z" fill="black"/>
-                                </g>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.503 9.81506C10.2951 9.81506 9.31252 10.7961 9.31252 12.0007C9.31252 13.2052 10.2951 14.184 11.503 14.184C12.711 14.184 13.6936 13.2052 13.6936 12.0007C13.6936 10.7961 12.711 9.81506 11.503 9.81506ZM11.5032 15.9213C9.33471 15.9213 7.57043 14.1631 7.57043 12.0007C7.57043 9.83823 9.33471 8.0777 11.5032 8.0777C13.6716 8.0777 15.4359 9.83823 15.4359 12.0007C15.4359 14.1631 13.6716 15.9213 11.5032 15.9213Z" fill="black"/>
-                            </svg>                                
-                        </a>
-                    </li>
-                    <li>
-                        <a class="d-flex justify-content-center modal-sidebar" data-target-custom="profile" href="javascript:void(0)">
-                            <img src="../assets/images/user.svg" alt="Profile">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="sidebar">
-            <div class="d-flex flex-column " style="width: 100%; height: 100vh;">
-                <button type="button" class="btn-toggle-fullwidth"><img src="../assets/images/toggle.svg" alt="Toggle"></button>   
-                <nav class="vertical-menu-adapting">
-                    <ul class="nav nav-pills flex-column mb-auto -primary">                 
-                        <li class="InnerLogo">
-                            <a href="javascript:void(0)"><img src="../assets/images/logo.svg" alt="Logo" /></a>
-                        </li>
-                        <li class="sidebar-search">
-                            <div class="common-search">
-                                <div class="input-group">
-                                    <input class="form-control" type="search" placeholder="Search Menu" id="example-search-input">
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link active" aria-current="page">
-                                <i>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5.3163 19.4384C5.92462 18.0052 7.34492 17 9 17H15C16.6551 17 18.0754 18.0052 18.6837 19.4384M16 9.5C16 11.7091 14.2091 13.5 12 13.5C9.79086 13.5 8 11.7091 8 9.5C8 7.29086 9.79086 5.5 12 5.5C14.2091 5.5 16 7.29086 16 9.5ZM22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#5750E4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg> 
-                                </i>
-                                <span>Employee</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link">
-                                <i>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8.4 3H4.6C4.03995 3 3.75992 3 3.54601 3.10899C3.35785 3.20487 3.20487 3.35785 3.10899 3.54601C3 3.75992 3 4.03995 3 4.6V8.4C3 8.96005 3 9.24008 3.10899 9.45399C3.20487 9.64215 3.35785 9.79513 3.54601 9.89101C3.75992 10 4.03995 10 4.6 10H8.4C8.96005 10 9.24008 10 9.45399 9.89101C9.64215 9.79513 9.79513 9.64215 9.89101 9.45399C10 9.24008 10 8.96005 10 8.4V4.6C10 4.03995 10 3.75992 9.89101 3.54601C9.79513 3.35785 9.64215 3.20487 9.45399 3.10899C9.24008 3 8.96005 3 8.4 3Z" stroke="#5B5B5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M19.4 3H15.6C15.0399 3 14.7599 3 14.546 3.10899C14.3578 3.20487 14.2049 3.35785 14.109 3.54601C14 3.75992 14 4.03995 14 4.6V8.4C14 8.96005 14 9.24008 14.109 9.45399C14.2049 9.64215 14.3578 9.79513 14.546 9.89101C14.7599 10 15.0399 10 15.6 10H19.4C19.9601 10 20.2401 10 20.454 9.89101C20.6422 9.79513 20.7951 9.64215 20.891 9.45399C21 9.24008 21 8.96005 21 8.4V4.6C21 4.03995 21 3.75992 20.891 3.54601C20.7951 3.35785 20.6422 3.20487 20.454 3.10899C20.2401 3 19.9601 3 19.4 3Z" stroke="#5B5B5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M19.4 14H15.6C15.0399 14 14.7599 14 14.546 14.109C14.3578 14.2049 14.2049 14.3578 14.109 14.546C14 14.7599 14 15.0399 14 15.6V19.4C14 19.9601 14 20.2401 14.109 20.454C14.2049 20.6422 14.3578 20.7951 14.546 20.891C14.7599 21 15.0399 21 15.6 21H19.4C19.9601 21 20.2401 21 20.454 20.891C20.6422 20.7951 20.7951 20.6422 20.891 20.454C21 20.2401 21 19.9601 21 19.4V15.6C21 15.0399 21 14.7599 20.891 14.546C20.7951 14.3578 20.6422 14.2049 20.454 14.109C20.2401 14 19.9601 14 19.4 14Z" stroke="#5B5B5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M8.4 14H4.6C4.03995 14 3.75992 14 3.54601 14.109C3.35785 14.2049 3.20487 14.3578 3.10899 14.546C3 14.7599 3 15.0399 3 15.6V19.4C3 19.9601 3 20.2401 3.10899 20.454C3.20487 20.6422 3.35785 20.7951 3.54601 20.891C3.75992 21 4.03995 21 4.6 21H8.4C8.96005 21 9.24008 21 9.45399 20.891C9.64215 20.7951 9.79513 20.6422 9.89101 20.454C10 20.2401 10 19.9601 10 19.4V15.6C10 15.0399 10 14.7599 9.89101 14.546C9.79513 14.3578 9.64215 14.2049 9.45399 14.109C9.24008 14 8.96005 14 8.4 14Z" stroke="#5B5B5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </i>
-                                <span>Onboarding</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link">
-                                <i>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M2 12L11.6422 16.8211C11.7734 16.8867 11.839 16.9195 11.9078 16.9324C11.9687 16.9438 12.0313 16.9438 12.0922 16.9324C12.161 16.9195 12.2266 16.8867 12.3578 16.8211L22 12M2 17L11.6422 21.8211C11.7734 21.8867 11.839 21.9195 11.9078 21.9324C11.9687 21.9438 12.0313 21.9438 12.0922 21.9324C12.161 21.9195 12.2266 21.8867 12.3578 21.8211L22 17M2 7L11.6422 2.17889C11.7734 2.1133 11.839 2.0805 11.9078 2.0676C11.9687 2.05616 12.0313 2.05616 12.0922 2.0676C12.161 2.0805 12.2266 2.1133 12.3578 2.17889L22 7L12.3578 11.8211C12.2266 11.8867 12.161 11.9195 12.0922 11.9324C12.0313 11.9438 11.9687 11.9438 11.9078 11.9324C11.839 11.9195 11.7734 11.8867 11.6422 11.8211L2 7Z" stroke="#5B5B5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </i>
-                                <span>Applicant Tracking System</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link">
-                                <i>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6 15L8 17L12.5 12.5M8 8V5.2C8 4.0799 8 3.51984 8.21799 3.09202C8.40973 2.71569 8.71569 2.40973 9.09202 2.21799C9.51984 2 10.0799 2 11.2 2H18.8C19.9201 2 20.4802 2 20.908 2.21799C21.2843 2.40973 21.5903 2.71569 21.782 3.09202C22 3.51984 22 4.0799 22 5.2V12.8C22 13.9201 22 14.4802 21.782 14.908C21.5903 15.2843 21.2843 15.5903 20.908 15.782C20.4802 16 19.9201 16 18.8 16H16M5.2 22H12.8C13.9201 22 14.4802 22 14.908 21.782C15.2843 21.5903 15.5903 21.2843 15.782 20.908C16 20.4802 16 19.9201 16 18.8V11.2C16 10.0799 16 9.51984 15.782 9.09202C15.5903 8.71569 15.2843 8.40973 14.908 8.21799C14.4802 8 13.9201 8 12.8 8H5.2C4.0799 8 3.51984 8 3.09202 8.21799C2.71569 8.40973 2.40973 8.71569 2.21799 9.09202C2 9.51984 2 10.0799 2 11.2V18.8C2 19.9201 2 20.4802 2.21799 20.908C2.40973 21.2843 2.71569 21.5903 3.09202 21.782C3.51984 22 4.07989 22 5.2 22Z" stroke="#5B5B5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </i>
-                                <span>Attendance</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link">
-                                <i>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 2C13.3132 2 14.6136 2.25866 15.8268 2.76121C17.0401 3.26375 18.1425 4.00035 19.0711 4.92893C19.9997 5.85752 20.7363 6.95991 21.2388 8.17317C21.7413 9.38643 22 10.6868 22 12M12 2V12M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5229 22 12M12 2C17.5228 2 22 6.47716 22 12M22 12L12 12M22 12C22 13.5781 21.6265 15.1338 20.9101 16.5399C20.1936 17.946 19.1546 19.1626 17.8779 20.0902L12 12" stroke="#5B5B5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </i>
-                                <span>Leave</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link">
-                                <i>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.84615C9.30703 1.84615 6.72436 2.91593 4.82015 4.82015C2.91593 6.72436 1.84615 9.30703 1.84615 12C1.84615 13.3334 2.10879 14.6538 2.61907 15.8857C3.12935 17.1176 3.87727 18.237 4.82015 19.1799C5.76302 20.1227 6.88237 20.8707 8.11429 21.3809C9.34621 21.8912 10.6666 22.1538 12 22.1538C13.3334 22.1538 14.6538 21.8912 15.8857 21.3809C17.1176 20.8707 18.237 20.1227 19.1799 19.1799C20.1227 18.237 20.8707 17.1176 21.3809 15.8857C21.8912 14.6538 22.1538 13.3334 22.1538 12C22.1538 9.30703 21.0841 6.72436 19.1799 4.82015C17.2756 2.91593 14.693 1.84615 12 1.84615ZM3.51472 3.51472C5.76515 1.26428 8.8174 0 12 0C15.1826 0 18.2348 1.26428 20.4853 3.51472C22.7357 5.76516 24 8.8174 24 12C24 13.5759 23.6896 15.1363 23.0866 16.5922C22.4835 18.0481 21.5996 19.371 20.4853 20.4853C19.371 21.5996 18.0481 22.4835 16.5922 23.0866C15.1363 23.6896 13.5759 24 12 24C10.4241 24 8.86371 23.6896 7.4078 23.0866C5.95189 22.4835 4.62902 21.5996 3.51472 20.4853C2.40042 19.371 1.5165 18.0481 0.913446 16.5922C0.310389 15.1363 0 13.5759 0 12C5.50197e-08 8.8174 1.26428 5.76516 3.51472 3.51472ZM12 4.92308C12.5098 4.92308 12.9231 5.33635 12.9231 5.84615V6.22029C14.1255 6.39547 15.2093 6.91152 15.8959 7.70265C16.2301 8.08767 16.1888 8.67067 15.8038 9.00483C15.4188 9.33898 14.8358 9.29775 14.5016 8.91273C14.2007 8.56598 13.6472 8.24611 12.9231 8.09365V11.1431C13.748 11.2629 14.5073 11.5423 15.1229 11.9527C15.9562 12.5082 16.6154 13.377 16.6154 14.4615C16.6154 15.5461 15.9562 16.4149 15.1229 16.9704C14.5073 17.3808 13.748 17.6601 12.9231 17.78V18.1538C12.9231 18.6636 12.5098 19.0769 12 19.0769C11.4902 19.0769 11.0769 18.6636 11.0769 18.1538V17.7797C9.87445 17.6045 8.79071 17.0885 8.10409 16.2973C7.76994 15.9123 7.81117 15.3293 8.19619 14.9952C8.58121 14.661 9.16421 14.7023 9.49837 15.0873C9.79931 15.434 10.3528 15.7539 11.0769 15.9063V12.8569C10.252 12.7371 9.49273 12.4577 8.87709 12.0473C8.04375 11.4918 7.38462 10.623 7.38462 9.53846C7.38462 8.4539 8.04375 7.58511 8.87709 7.02962C9.49273 6.61924 10.252 6.33985 11.0769 6.21998V5.84615C11.0769 5.33635 11.4902 4.92308 12 4.92308ZM11.0769 8.09396C10.6105 8.19215 10.2091 8.36043 9.90107 8.56577C9.39809 8.90104 9.23077 9.26302 9.23077 9.53846C9.23077 9.8139 9.39809 10.1759 9.90107 10.5112C10.2091 10.7165 10.6105 10.8848 11.0769 10.983V8.09396ZM12.9231 13.017V15.906C13.3895 15.8078 13.7909 15.6396 14.0989 15.4342C14.6019 15.099 14.7692 14.737 14.7692 14.4615C14.7692 14.1861 14.6019 13.8241 14.0989 13.4888C13.7909 13.2835 13.3895 13.1152 12.9231 13.017Z" fill="#5B5B5B"/>
-                                    </svg>  
-                                </i>
-                                <span>Expense</span>
-                            </a>
-                        </li> 
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link">
-                                <i>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M14 21H10M18 8C18 6.4087 17.3679 4.88258 16.2427 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.8826 2.63214 7.75738 3.75736C6.63216 4.88258 6.00002 6.4087 6.00002 8C6.00002 11.0902 5.22049 13.206 4.34968 14.6054C3.61515 15.7859 3.24788 16.3761 3.26134 16.5408C3.27626 16.7231 3.31488 16.7926 3.46179 16.9016C3.59448 17 4.19261 17 5.38887 17H18.6112C19.8074 17 20.4056 17 20.5382 16.9016C20.6852 16.7926 20.7238 16.7231 20.7387 16.5408C20.7522 16.3761 20.3849 15.7859 19.6504 14.6054C18.7795 13.206 18 11.0902 18 8Z" stroke="#5B5B5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <circle cx="17.5" cy="4.5" r="3" fill="#5750E4" stroke="white"/>
-                                    </svg>  
-                                </i>
-                                <span>Performance</span>
-                            </a>
-                        </li> 
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link">
-                                <i>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6.09436 11.2288C6.03221 10.8282 5.99996 10.4179 5.99996 10C5.99996 5.58172 9.60525 2 14.0526 2C18.4999 2 22.1052 5.58172 22.1052 10C22.1052 10.9981 21.9213 11.9535 21.5852 12.8345C21.5154 13.0175 21.4804 13.109 21.4646 13.1804C21.4489 13.2512 21.4428 13.301 21.4411 13.3735C21.4394 13.4466 21.4493 13.5272 21.4692 13.6883L21.8717 16.9585C21.9153 17.3125 21.9371 17.4895 21.8782 17.6182C21.8266 17.731 21.735 17.8205 21.6211 17.8695C21.4911 17.9254 21.3146 17.8995 20.9617 17.8478L17.7765 17.3809C17.6101 17.3565 17.527 17.3443 17.4512 17.3448C17.3763 17.3452 17.3245 17.3507 17.2511 17.3661C17.177 17.3817 17.0823 17.4172 16.893 17.4881C16.0097 17.819 15.0524 18 14.0526 18C13.6344 18 13.2237 17.9683 12.8227 17.9073M7.63158 22C10.5965 22 13 19.5376 13 16.5C13 13.4624 10.5965 11 7.63158 11C4.66668 11 2.26316 13.4624 2.26316 16.5C2.26316 17.1106 2.36028 17.6979 2.53955 18.2467C2.61533 18.4787 2.65322 18.5947 2.66566 18.6739C2.67864 18.7567 2.68091 18.8031 2.67608 18.8867C2.67145 18.9668 2.65141 19.0573 2.61134 19.2383L2 22L4.9948 21.591C5.15827 21.5687 5.24 21.5575 5.31137 21.558C5.38652 21.5585 5.42641 21.5626 5.50011 21.5773C5.5701 21.5912 5.67416 21.6279 5.88227 21.7014C6.43059 21.8949 7.01911 22 7.63158 22Z" stroke="#5B5B5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg> 
-                                </i>
-                                <span>Helpdesk</span>
-                            </a>
-                        </li> 
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link">
-                                <i>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M15.0505 9H5.5C4.11929 9 3 7.88071 3 6.5C3 5.11929 4.11929 4 5.5 4H15.0505M8.94949 20H18.5C19.8807 20 21 18.8807 21 17.5C21 16.1193 19.8807 15 18.5 15H8.94949M3 17.5C3 19.433 4.567 21 6.5 21C8.433 21 10 19.433 10 17.5C10 15.567 8.433 14 6.5 14C4.567 14 3 15.567 3 17.5ZM21 6.5C21 8.433 19.433 10 17.5 10C15.567 10 14 8.433 14 6.5C14 4.567 15.567 3 17.5 3C19.433 3 21 4.567 21 6.5Z" stroke="#5B5B5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg> 
-                                </i>
-                                <span>Exit</span>
-                            </a>
-                        </li> 
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link">
-                                <i>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9 21V13.6C9 13.0399 9 12.7599 9.10899 12.546C9.20487 12.3578 9.35785 12.2049 9.54601 12.109C9.75992 12 10.0399 12 10.6 12H13.4C13.9601 12 14.2401 12 14.454 12.109C14.6422 12.2049 14.7951 12.3578 14.891 12.546C15 12.7599 15 13.0399 15 13.6V21M11.0177 2.76401L4.23539 8.03914C3.78202 8.39176 3.55534 8.56807 3.39203 8.78887C3.24737 8.98446 3.1396 9.2048 3.07403 9.43907C3 9.70353 3 9.99071 3 10.5651V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V10.5651C21 9.99071 21 9.70353 20.926 9.43907C20.8604 9.2048 20.7526 8.98446 20.608 8.78887C20.4447 8.56807 20.218 8.39176 19.7646 8.03914L12.9823 2.76401C12.631 2.49076 12.4553 2.35413 12.2613 2.30162C12.0902 2.25528 11.9098 2.25528 11.7387 2.30162C11.5447 2.35413 11.369 2.49076 11.0177 2.76401Z" stroke="#5B5B5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg> 
-                                </i>
-                                <span>LMS</span>
-                            </a>
-                        </li> 
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link">
-                                <i>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M14 21H10M18 8C18 6.4087 17.3679 4.88258 16.2427 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.8826 2.63214 7.75738 3.75736C6.63216 4.88258 6.00002 6.4087 6.00002 8C6.00002 11.0902 5.22049 13.206 4.34968 14.6054C3.61515 15.7859 3.24788 16.3761 3.26134 16.5408C3.27626 16.7231 3.31488 16.7926 3.46179 16.9016C3.59448 17 4.19261 17 5.38887 17H18.6112C19.8074 17 20.4056 17 20.5382 16.9016C20.6852 16.7926 20.7238 16.7231 20.7387 16.5408C20.7522 16.3761 20.3849 15.7859 19.6504 14.6054C18.7795 13.206 18 11.0902 18 8Z" stroke="#5B5B5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <circle cx="17.5" cy="4.5" r="3" fill="#5750E4" stroke="white"/>
-                                    </svg>  
-                                </i>
-                                <span>Notifications</span>
-                            </a>
-                        </li> 
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link">
-                                <i>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M2 12L11.6422 16.8211C11.7734 16.8867 11.839 16.9195 11.9078 16.9324C11.9687 16.9438 12.0313 16.9438 12.0922 16.9324C12.161 16.9195 12.2266 16.8867 12.3578 16.8211L22 12M2 17L11.6422 21.8211C11.7734 21.8867 11.839 21.9195 11.9078 21.9324C11.9687 21.9438 12.0313 21.9438 12.0922 21.9324C12.161 21.9195 12.2266 21.8867 12.3578 21.8211L22 17M2 7L11.6422 2.17889C11.7734 2.1133 11.839 2.0805 11.9078 2.0676C11.9687 2.05616 12.0313 2.05616 12.0922 2.0676C12.161 2.0805 12.2266 2.1133 12.3578 2.17889L22 7L12.3578 11.8211C12.2266 11.8867 12.161 11.9195 12.0922 11.9324C12.0313 11.9438 11.9687 11.9438 11.9078 11.9324C11.839 11.9195 11.7734 11.8867 11.6422 11.8211L2 7Z" stroke="#5B5B5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>  
-                                </i>
-                                <span>Reports</span>
-                            </a>
-                        </li> 
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link">
-                                <i>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6 15L8 17L12.5 12.5M8 8V5.2C8 4.0799 8 3.51984 8.21799 3.09202C8.40973 2.71569 8.71569 2.40973 9.09202 2.21799C9.51984 2 10.0799 2 11.2 2H18.8C19.9201 2 20.4802 2 20.908 2.21799C21.2843 2.40973 21.5903 2.71569 21.782 3.09202C22 3.51984 22 4.0799 22 5.2V12.8C22 13.9201 22 14.4802 21.782 14.908C21.5903 15.2843 21.2843 15.5903 20.908 15.782C20.4802 16 19.9201 16 18.8 16H16M5.2 22H12.8C13.9201 22 14.4802 22 14.908 21.782C15.2843 21.5903 15.5903 21.2843 15.782 20.908C16 20.4802 16 19.9201 16 18.8V11.2C16 10.0799 16 9.51984 15.782 9.09202C15.5903 8.71569 15.2843 8.40973 14.908 8.21799C14.4802 8 13.9201 8 12.8 8H5.2C4.0799 8 3.51984 8 3.09202 8.21799C2.71569 8.40973 2.40973 8.71569 2.21799 9.09202C2 9.51984 2 10.0799 2 11.2V18.8C2 19.9201 2 20.4802 2.21799 20.908C2.40973 21.2843 2.71569 21.5903 3.09202 21.782C3.51984 22 4.07989 22 5.2 22Z" stroke="#5B5B5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg> 
-                                </i>
-                                <span>Reports</span>
-                            </a>
-                        </li>                                         
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+<?php
+    include "Header/header.php";
+?>
 
     <div class="main-content">
         <div class="content">
@@ -248,20 +24,20 @@
                                 <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                                     <div class="mb-3">
                                         <label for="exampleFormControlInput1" class="form-label">Request ID</label>
-                                        <input type="text" class="form-control" placeholder="Place Holder">
+                                        <input disabled readonly type="text" class="form-control" placeholder="Place Holder">
                                     </div>
                                 </div>
                                 <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                                     <div class="mb-3">
                                         <label for="exampleFormControlInput1" class="form-label">Employee Name</label>
-                                        <input type="text" class="form-control" placeholder="Place Holder">
+                                        <input disabled readonly type="text" class="form-control" placeholder="Place Holder">
                                     </div>
                                 </div>
                                 <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                                     <div class="mb-3">
                                         <label for="exampleFormControlInput1" class="form-label">Expense Date</label>
                                         <div class="input-group date datepicker">
-                                            <input class="form-control calender" placeholder="MM-DD-YYYY" type="text">
+                                            <input disabled readonly class="form-control calender" placeholder="MM-DD-YYYY" type="text">
                                             <span class="input-group-addon"></span>
                                         </div>
                                     </div>
@@ -269,7 +45,7 @@
                                 <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                                     <div class="mb-3">
                                         <label for="exampleFormControlInput1" class="form-label">Expense Type</label>
-                                        <select class="form-select" aria-label="Default select example">
+                                        <select disabled readonly class="form-select" aria-label="Default select example">
                                             <option selected="">Place Holder</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -280,7 +56,7 @@
                                 <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                                     <div class="mb-3">
                                         <label for="exampleFormControlInput1" class="form-label">Department</label>
-                                        <select class="form-select" aria-label="Default select example">
+                                        <select disabled readonly class="form-select" aria-label="Default select example">
                                             <option selected="">Place Holder</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -291,27 +67,27 @@
                                 <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                                     <div class="mb-3">
                                         <label for="exampleFormControlInput1" class="form-label">Team Name</label>
-                                        <input type="text" class="form-control" placeholder="Place Holder">
+                                        <input disabled readonly type="text" class="form-control" placeholder="Place Holder">
                                     </div>
                                 </div>
                                 <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                                     <div class="mb-3">
                                         <label for="exampleFormControlInput1" class="form-label">Team Count</label>
-                                        <input type="text" class="form-control" placeholder="Place Holder">
+                                        <input disabled readonly type="text" class="form-control" placeholder="Place Holder">
                                     </div>
                                 </div>                                            
                                 <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                                     <div class="mb-3 custom-input-group">
                                         <label for="exampleFormControlInput1" class="form-label">Amount</label>
                                         <div class="input-group mb-3">
-                                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                            <button disabled readonly class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
                                                 aria-expanded="false">USD</button>
                                             <ul class="dropdown-menu">
                                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                                 <li><a class="dropdown-item" href="#">Another action</a></li>
                                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                                             </ul>
-                                            <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                                            <input disabled readonly type="text" class="form-control" aria-label="Text input with dropdown button">
                                         </div>
                                     </div>
                                 </div>
@@ -378,14 +154,14 @@
                                     <div class="mb-3">
                                         <label for="exampleFormControlInput1" class="form-label">Processed On</label>
                                         <div class="align-items-center d-flex h-40">
-                                            <input type="checkbox" checked data-toggle="toggle">
+                                            <input disabled readonly type="checkbox" checked data-toggle="toggle">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                                     <div class="mb-3">
                                         <label for="exampleFormControlInput1" class="form-label">Processed On</label>
-                                        <select class="form-select" aria-label="Default select example">
+                                        <select disabled readonly class="form-select" aria-label="Default select example">
                                             <option selected="">Place Holder</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -395,24 +171,6 @@
                                 </div>
                             </div>
                         </form>
-                        <div class="history pt-1 pb-3">
-                            <ul>
-                                <li style="border: 1px solid #E9EAEC; border-radius: 5px;">
-                                    <div class="">
-                                        Added By <p class="font-weight-700">Samuel John,</p> 
-                                    </div>
-                                    <div class="">
-                                        on <p class="font-weight-700">Dec 10, 2023 |</p> 
-                                    </div>
-                                    <div class="">
-                                        Modified By <p class="font-weight-700">Samuel John,</p> 
-                                    </div>
-                                    <div class="">
-                                        Time <p class="font-weight-700">Sep 02, 2023 16:21:54 </p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
                         <div class="emp-usr-chatbox">
                             <ul>
                                 <li class="emp-post">
@@ -437,6 +195,31 @@
                                         </div>
                                     </div>
                                 </li>
+                            </ul>
+                        </div>
+                        <div class="history pt-1 pb-3 mt-3">
+                            <ul>
+                                <div class="secondary-accordion">
+                                <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            <p class="font-weight-600 m-0">Modified By <b>Samuel John</b>, Time <b>Few minutes ago</b></p>
+                                          </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                          data-bs-parent="#accordionExample">
+                                          <div style="padding: 1rem 1rem 1rem 1.7rem;" class="accordion-body">
+                                            <p class="font-weight-500 m-0" style="font-size: 16px;">Modified By <b>Samuel John</b>, Time <b>Sep 02, 2023 16:21:54 </b></p>
+                                            <hr class="border">
+                                            <p class="font-weight-500 m-0" style="font-size: 16px;">Modified By <b>Samuel John</b>, Time <b>Aug 22, 2023 22:21:12 </b></p>
+                                            <hr class="border">
+                                            <p class="font-weight-500 m-0" style="font-size: 16px;">Modified By <b>Samuel John</b>, Time <b>Dec 10, 2023</b></p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                               
                             </ul>
                         </div>
                     </div>
@@ -635,35 +418,6 @@
     </div>
 
     <div id="drop-effect" class="modal-drop-effect"></div>
-
-    <script type="text/javascript" src="../assets/js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-
-    <!-- SIMPLE-SCROLL-BAR -->
-    <script type="text/javascript" src="../assets/js/simplebar.js"></script>
-    <!-- SIMPLE-SCROLL-BAR -->
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-
-    <script type="text/javascript" src="../assets/js/slick.min.js"></script>
-    <script type="text/javascript" src="../assets/js/custom.js"></script>
-
-    <script type="text/javascript" src="../assets/js/table.js"></script>
-
-    <script type="text/javascript" src="../assets/js/vertical-menu-adapting-with-button.js"></script>
-    <script type="text/javascript" src="../assets/js/horizontal-menu-adapting-with-button.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap-table@1.22.4/dist/bootstrap-table.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap-table@1.22.4/dist/extensions/fixed-columns/bootstrap-table-fixed-columns.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap5-toggle@5.0.4/js/bootstrap5-toggle.jquery.min.js"></script>
-
-    <script type="text/javascript">
-        tooltip.show()
-    </script>
-  
-</body>
-</html>
+<?php
+    include "Footer/footer.php";
+?>
